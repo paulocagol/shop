@@ -23,6 +23,10 @@ class Products with ChangeNotifier {
     notifyListeners();
   }
 
+  int get itemsCount {
+    return _items.length;
+  }
+
   // void showFavoriteOnly() {
   //   _showFavoriteOnly = true;
   //   notifyListeners();
